@@ -1,0 +1,36 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+    <div class="two-col-layout">
+        <main class="main">
+            <article class="article">
+                <header>
+                    <h1>About</h1>
+                    <p class="author">Skriven av Josefine Thorsson, uppdaterad <time datetime="2024-04-26">2024-04-26</time>.</p>
+                </header>
+
+                <figure class="figure center">
+                    <img src="img/mvc.jpg" width="300" alt="Kursbild">
+                    <figcaption>MVC-kursen VT2024</figcaption>
+                </figure>
+
+                <p>
+                Kursen Objektorienterade webbteknologier (MVC) är en objektorienterad kurs
+                i webbteknologier med främsta fokus på PHP.
+                Den behandlar olika delar såsom objektorienterade konstruktioner,
+                programmering i ett webbaserat ramverk, databaser och enhetstestning.
+                </p>
+            </article>
+        </main>
+
+        <aside class="aside">
+            <h4>Kursen</h4>
+            <ul>
+                <li><a href="https://github.com/dbwebb-se/mvc">MVC kursrepo</a></li>
+                <li><a href="https://github.com/JosefineThorsson/MVC">Josefines kursrepo</a></li>
+            </ul>
+        </aside>
+    </div>
+{% endblock %}

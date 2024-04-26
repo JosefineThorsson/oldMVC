@@ -1,0 +1,242 @@
+body {
+    margin: 0 auto;
+    max-width: 400px;
+    background: url('../images/background.jpg');
+    background-size: cover;
+    background-color: #eee;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.article {
+    overflow: auto;
+    background: #fff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.article h1 {
+    font-size: 2em;
+    border-bottom: 4px double #ccc;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.article .author {
+    margin-top: -1em;
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+}
+
+.main,
+.main .article {
+    min-height: 20em;
+}
+
+.aside {
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 24px;
+}
+
+.aside h4 {
+    border-bottom: 1px solid #ccc;
+}
+
+.article h2 {
+    font-size: 1.5em;
+    border-bottom: 4px double #ccc;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.article .text1 {
+    font-size: 1em;
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    border-bottom: 4px double #ccc;
+}
+
+.two-col-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width:900px;
+    margin: 0 auto;
+}
+
+.two-col-layout > .main {
+    width: calc(100% / 16 * 12); /* 12/16 width */
+}
+
+.two-col-layout > .aside {
+    width: calc(100% / 16 * 4); /* 4/16 width */
+}
+
+/*
+ * Prepare variables.
+ */
+:root {
+    --light-color: #8ddb7c;
+    --medium-color: #7A7;
+    --dark-color: #363;
+}
+
+/*
+ * Set colors, size and prepare positioning.
+ */
+.site-header {
+    background-color: var(--light-color);
+    border-bottom: 4px solid var(--dark-color);
+    position: relative;
+}
+
+/*
+ * Modify and position the subtitle.
+ */
+.subheader {
+    color: var(--dark-color);
+    font-size: 40px;
+
+    display: inline-block;
+    transform: rotate(-20deg);
+
+    position: relative;
+    top: -60px;
+    left: 150px;
+}
+
+/** footer.css */
+
+/*
+ * Set colors and size.
+ */
+.footer {
+    background: linear-gradient(to bottom, #666, #000);
+    color: #FFF;
+    padding: 0 1em;
+}
+
+/* html {
+    background-color: #000;
+} */
+
+/*
+ * Style the links.
+ */
+.footer a {
+    color: #FFF;
+}
+
+.footer a:hover {
+    color: lime;
+    text-decoration: none;
+}
+
+/*
+ * Style the content.
+ */
+.box h4 {
+    border-bottom: 2px solid #fff;
+}
+
+.final {
+    text-align: center;
+}
+
+/*
+ * Style the rows and columns.
+ */
+.footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.footer .row > .col3 {
+    width: calc(100% / 3);
+}
+
+.footer .row > .col1 {
+    width: 100%;
+}
+
+/** navbar.css */
+
+/*
+ * Add colors and borders.
+ */
+.navbar {
+    background: linear-gradient(to bottom right, #472dee, #141d25, #322828, #472dee);
+    border-top: 4px solid #4F5B93;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/*
+ * Style links.
+ */
+.navbar a {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #EEE;
+    background-color: #4F5B93;
+}
+
+/*
+ * Remove bullets, margins and padding from the list.
+ */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Put the li items on a line.
+ */
+.navbar li {
+    display: inline;
+}
+
+/** responsive.css */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .two-col-layout {
+        flex-wrap: wrap;
+    }
+
+    .two-col-layout > .main,
+    .two-col-layout > .aside {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer .row {
+        flex-wrap: wrap;
+    }
+
+    .footer .row > .col3 {
+        width: 100%;
+    }
+}

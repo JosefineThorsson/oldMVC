@@ -1,0 +1,84 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Report{% endblock %}
+
+{% block body %}
+    <h1>Report</h1>
+
+    <div class="two-col-layout">
+        <aside class="aside">
+            <ul>
+                <li><a href="#kmom01">kmom01</a></li>
+                <li><a href="#kmom02">kmom02</a></li>
+                <li><a href="#kmom03">kmom03</a></li>
+                <li><a href="#kmom04">kmom04</a></li>
+                <li><a href="#kmom05">kmom05</a></li>
+                <li><a href="#kmom06">kmom06</a></li>
+                <li><a href="#kmom10">kmom10</a></li>
+            </ul>
+        </aside>
+
+        <main class="main">
+            <article class="article">
+                <header>
+                    <h1>Redovisning</h1>
+                    <p class="author">Skriven av Josefine Thorsson, uppdaterad <time datetime="2024-04-26">2024-04-26</time>.</p>
+                </header>
+
+                <h2 id="kmom01">kmom01</h2>
+
+                <p class="text1">
+                    Min tidigare erfarenhet av objektorientering bottnar i tidigare kurser vi haft
+                    inom bland annat objektorienterad python och JavaScript.
+                    Jag personligen gillar strukturen och användbarheten som kommer av att kunna använda
+                    bland annat klasser för att kunna styla sina webbsidor och enskilda element såsom man vill.
+                    Men ibland kan det vara tufft att förstå hur man ska kombinera olika tekniker och språk,
+                    samt inkludera exempelvis bilder, filer eller moduler.
+                </p>
+
+                <p class="text1">
+                    Gällande PHPs modell för klasser och objekt så är det viktigt att man förstår hur det fungerar
+                    både när man försöker använda publika objekt och privata (inkapsalde) objekt i definierade klasser.
+                    Medan publika objekt är tillgängliga att exportera mellan filer,
+                    så kräver privata objekt antingen en fördefinierad konstruktor, eller att värdena bestäms genom setter och getters.
+                    Dessa hämtar värden och kan ändra dem när det är nödvändigt.
+                    En annan viktig komponent när man arbetar med klasser och objekt i PHP är autoloading som hjälper till
+                    att automatiskt läsa in de klassfiler man behöver till ens testprogram. Detta så man slipper importera allt varje gång.
+                </p>
+
+                <p class="text1">
+                    Efter att ha gjort övningen för att träna upp mig på Symfony, så kändes det tryggt att göra uppgiften.
+                    Upplevde dessutom att jag fick användning av en del tricks som jag tagit till mig i tidigare kurser
+                    såsom design, javascript och webtec-kursen.
+                    Däremot artikeln "PHP The Right Way" hade jag svårt att ta till mig eftersom den var så lång.
+                    Det gjorde att allt kändes väldigt abstrakt för mig. Min tid investerades bättre i att göra övningen
+                    och att använda min tidigare erfarenhet från PHP, från webtec-kursen.
+                </p>
+
+                <p class="text1">
+                    Det har varit mycket mycket nytt att ta in.
+                    Men samtidigt lärorikt och kul att känna att jag har nytta av det jag lärt mig i tidigare kurser under året.
+                    Lärt mig ytterligare att förstå hur olika språk samverkar och hur man kan nyttja detta.
+                </p>
+
+                <h2 id="kmom02">kmom02</h2>
+                <p class="text1">Här kommer redovisningstexten för detta kursmoment.</p>
+
+                <h2 id="kmom03">kmom03</h2>
+                <p class="text1">Här kommer redovisningstexten för detta kursmoment.</p>
+
+                <h2 id="kmom04">kmom04</h2>
+                <p class="text1">Här kommer redovisningstexten för detta kursmoment.</p>
+
+                <h2 id="kmom05">kmom05</h2>
+                <p class="text1">Här kommer redovisningstexten för detta kursmoment.</p>
+    
+                <h2 id="kmom06">kmom06</h2>
+                <p class="text1">Här kommer redovisningstexten för detta kursmoment.</p>
+
+                <h2 id="kmom10">kmom10</h2>
+                <p class="text1">Här kommer redovisningstexten för detta kursmoment.</p>
+            </article>
+        </main>
+    </div>
+{% endblock %}
